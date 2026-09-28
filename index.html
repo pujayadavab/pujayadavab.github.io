@@ -1,231 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puja Yadav</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background-color: #f7fafc;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            background: white;
-            padding: 60px 50px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #1a202c;
-            font-weight: 700;
-        }
-
-        .intro {
-            font-size: 1.2em;
-            color: #4a5568;
-            margin-bottom: 40px;
-            line-height: 1.7;
-        }
-
-        .section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #1a202c;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #4a5568;
-            font-size: 1.05em;
-        }
-
-        .highlight-box {
-            background: #f7fafc;
-            border-left: 4px solid #4299e1;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-
-        .highlight-box p {
-            margin-bottom: 10px;
-        }
-
-        .highlight-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        .links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            padding-top: 40px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .links a {
-            color: #4299e1;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .links a:hover {
-            color: #2b6cb0;
-        }
-
-        .work-item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .work-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .work-title {
-            font-weight: 600;
-            color: #1a202c;
-            font-size: 1.1em;
-            margin-bottom: 8px;
-        }
-
-        .work-company {
-            color: #718096;
-            margin-bottom: 12px;
-            font-size: 0.95em;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #edf2f7;
-            color: #4a5568;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.9em;
-            margin-right: 8px;
-            margin-bottom: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 40px 30px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .intro {
-                font-size: 1.1em;
-            }
-        }
-    </style>
-</head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puja Yadav</title>
+<style>
+:root{--blue:#0726DD;--ink:#171717;--muted:#666;--line:#e3e3e3;--bg:#fff}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.55}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+.shell{max-width:920px;margin:auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)} nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.name{font-size:22px;color:var(--ink)} .navlinks{display:flex;gap:24px} .navlinks a{color:var(--ink)}
+main{padding:54px 0 75px} h1,h2{font-weight:500;letter-spacing:-.02em} h1{font-size:30px;margin:0 0 20px} h2{font-size:26px;margin:42px 0 16px}
+.intro{max-width:820px} .intro p{margin:0 0 18px}
+.portrait{width:210px} .portrait img{width:100%;display:block;filter:grayscale(1)}
+.small{font-size:14px;color:var(--muted);margin-top:8px}
+.work-list{border-top:1px solid var(--line)} .work{display:grid;grid-template-columns:180px 1fr;gap:22px;padding:17px 0;border-bottom:1px solid var(--line)} .work-title{font-weight:600} .work-desc{color:#444}
+.questions p{margin:8px 0} footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+@media(max-width:650px){.intro{max-width:100%}.navlinks{gap:13px;font-size:14px}.work{grid-template-columns:1fr;gap:3px}}
+</style></head>
 <body>
-    <div class="container">
-        <h1>Hi, I'm Puja 👋</h1>
-        
-        <p class="intro">
-            I'm a product manager and data analyst who loves turning messy data into clear stories that drive decisions. 
-            Currently getting my MS in Business Analytics at Brandeis while working on go-to-market strategy for a construction tech startup.
-        </p>
+<header><div class="shell"><nav><a class="name" href="#">Puja Yadav</a><div class="navlinks"><a href="#about">about</a><a href="#work">work</a><a href="#questions">questions</a></div></nav></div></header>
+<main class="shell">
+<section class="intro" id="about">
+<div>
+<h1>Hi, I’m Puja.</h1>
+<p>I grew up in a tiny village in the plains of southern Nepal and am currently based in the United States. My path since then has been a little nonlinear: I’ve worked across storytelling, community-building, marketing, analytics, research, and entrepreneurship.</p>
+<p>I’m especially interested in people, ideas, and how things get made. These days, a lot of my attention is on AI—particularly what it changes about creativity, learning, expertise, organizations, and human agency.</p>
+<p>Outside of research, I write, build projects, and keep finding reasons to bring people together around ideas.</p>
+</div></section>
 
-        <div class="section">
-            <h2>What I Do</h2>
-            <p>
-                I build products and strategies at the intersection of data, marketing, and user experience. 
-                My sweet spot is taking complex business problems, digging into the data, and creating solutions that actually work.
-            </p>
-            
-            <div class="highlight-box">
-                <p><strong>Recent win:</strong> Co-founded The Asian Writers, a creative writing venture in Nepal. Built a viral content strategy that got 1.5M+ views, grew to 36K+ followers, and generated $4K in first-year revenue with $3.8K in seed funding.</p>
-            </div>
+<section id="work"><h2>some things I’ve worked on</h2>
+<div class="work-list">
+<div class="work"><div class="work-title"><a href="#">Allocative Creativity</a></div><div class="work-desc">A research model for understanding how creative activities are allocated between humans and generative AI, and what those choices mean for creativity and innovation in organizations.</div></div>
+<div class="work"><div class="work-title"><a href="#">ai&adjacent</a></div><div class="work-desc">An independent home for my writing and research on AI and the questions around it—creativity, organizations, human agency, expertise, and everyday life.</div></div>
+<div class="work"><div class="work-title"><a href="#">The Asian Writers</a></div><div class="work-desc">A writing community I co-founded, where I worked across curriculum, community-building, operations, storytelling, and experiments in giving.</div></div>
+<div class="work"><div class="work-title"><a href="#">AlloAI</a></div><div class="work-desc">Commercialization work for an advanced-materials startup, exploring customer needs, technical requirements, and applications for a novel aerospace alloy.</div></div>
+<div class="work"><div class="work-title"><a href="#">Humans of Medico</a></div><div class="work-desc">A storytelling project built from conversations with doctors, nurses, and medical students during COVID-19—an early exploration of listening, interviewing, and writing people’s lives.</div></div>
+<div class="work"><div class="work-title"><a href="#">AI in higher education</a></div><div class="work-desc">Work at Brandeis exploring how universities are responding to generative AI, and how emerging tools might fit into teaching and learning.</div></div>
+<div class="work"><div class="work-title"><a href="#">Marketing systems & analytics</a></div><div class="work-desc">I’ve worked across digital strategy, marketing analytics, experimentation, dashboards, CRM systems, funnels, and go-to-market—using data to understand how people find, choose, and engage with products.</div></div>
+<div class="work"><div class="work-title"><a href="#">Gender equity research</a></div><div class="work-desc">Research and programming around gender equity, including policy work, conversations with government and civil-society stakeholders, and community-based research.</div></div>
+<div class="work"><div class="work-title"><a href="#">Fellowships & learning communities</a></div><div class="work-desc">I’ve been part of communities that shaped how I think and work: Women Deliver Young Leaders, the GivingTuesday Starling Collective, Laconia’s VC Fellowship, and the Gograha Film Workshop—across gender equity, generosity, venture capital, filmmaking, and storytelling.</div></div>
+<div class="work"><div class="work-title"><a href="#">Film & storytelling</a></div><div class="work-desc">Documentary work, filmmaking training, and continuing experiments in narrative, writing, and cultural projects.</div></div>
+</div></section>
 
-            <p>
-                Before that, I led digital marketing for multiple clients, delivering 25,000 qualified leads (213% above target) and achieving 970% growth in impressions through data-driven campaign optimization.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>Currently</h2>
-            
-            <div class="work-item">
-                <div class="work-title">Product Manager Intern @ SRGE Inc.</div>
-                <div class="work-company">Construction accelerator transitioning to SaaS</div>
-                <p>Building the go-to-market strategy from scratch - everything from brand positioning to sales funnel design in HubSpot. Focusing on turning a consulting business into a scalable product.</p>
-            </div>
-
-            <div class="work-item">
-                <div class="work-title">Research Assistant @ Brandeis University</div>
-                <div class="work-company">AI & organizational creativity research</div>
-                <p>Researching how AI adoption impacts creative output in organizations. Exploring what happens when humans and AI collaborate on creative work.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Background</h2>
-            <p>
-                I started in digital marketing in Nepal, managing campaigns for clients and learning how to optimize every stage of the customer journey. 
-                That led me to product management, where I could combine my love for strategy, data, and building things people actually use.
-            </p>
-            <p>
-                I also led a research project on women's political representation in Nepal with a $5.5K grant, managing an 11-person team. 
-                Turns out, despite a 33% quota, women held only 2.8% of primary leadership roles - the data told a clear story.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>Skills & Tools</h2>
-            <p style="margin-bottom: 15px;">Things I work with regularly:</p>
-            <div>
-                <span class="tag">Python</span>
-                <span class="tag">SQL</span>
-                <span class="tag">R</span>
-                <span class="tag">HubSpot</span>
-                <span class="tag">Power BI</span>
-                <span class="tag">Tableau</span>
-                <span class="tag">Google Analytics</span>
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Excel</span>
-                <span class="tag">Figma</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Fun Facts</h2>
-            <p>🏆 Won 1st place at Brandeis Annual Datathon (2025)</p>
-            <p>🎓 Business School Captain at Brandeis</p>
-            <p>📊 Board member of PE/VC Club</p>
-            <p>🚀 Ain Family Startup Award recipient</p>
-        </div>
-
-        <div class="links">
-            <a href="https://linkedin.com/in/pujayadav" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</body>
-</html>
+<section class="questions" id="questions"><h2>questions I’m thinking about</h2>
+<p>How should humans and AI work together?</p>
+<p>What should we do ourselves, and what should we delegate to machines?</p>
+<p>How does that allocation change creativity, learning, expertise, and innovation over time?</p>
+<p>What kinds of technologies and organizations leave people more capable—not less?</p>
+</section>
+</main>
+<footer><div class="shell">Puja Yadav · research, writing, building, and other things.</div></footer>
+</body></html>
